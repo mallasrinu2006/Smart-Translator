@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>✨ Smart Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="translator-container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <div class="logo">
+                🌐
+            </div>
+
+            <div>
+                <h1>Smart Translator</h1>
+                <p>Translate your words instantly ✨</p>
+            </div>
+
+        </div>
+
+
+        <!-- Language Selection -->
+        <div class="language-section">
+
+            <div class="language-card">
+
+                <label>From</label>
+
+                <select id="sourceLanguage">
+
+                    <option value="en">🇬🇧 English</option>
+                    <option value="te">🇮🇳 Telugu</option>
+                    <option value="hi">🇮🇳 Hindi</option>
+                    <option value="ta">🇮🇳 Tamil</option>
+                    <option value="kn">🇮🇳 Kannada</option>
+                    <option value="fr">🇫🇷 French</option>
+                    <option value="de">🇩🇪 German</option>
+                    <option value="es">🇪🇸 Spanish</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Swap Button -->
+            <button id="swapButton" class="swap-button">
+                ⇄
+            </button>
+
+
+            <div class="language-card">
+
+                <label>To</label>
+
+                <select id="targetLanguage">
+
+                    <option value="te">🇮🇳 Telugu</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="hi">🇮🇳 Hindi</option>
+                    <option value="ta">🇮🇳 Tamil</option>
+                    <option value="kn">🇮🇳 Kannada</option>
+                    <option value="fr">🇫🇷 French</option>
+                    <option value="de">🇩🇪 German</option>
+                    <option value="es">🇪🇸 Spanish</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Text Areas -->
+        <div class="text-section">
+
+
+            <!-- Input -->
+            <div class="text-card">
+
+                <div class="card-header">
+
+                    <h3>✍️ Your Text</h3>
+
+                    <span id="inputCount">
+                        0 characters
+                    </span>
+
+                </div>
+
+                <textarea
+                    id="inputText"
+                    placeholder="Type something here..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Output -->
+            <div class="text-card">
+
+                <div class="card-header">
+
+                    <h3>✨ Translation</h3>
+
+                    <span id="outputCount">
+                        0 characters
+                    </span>
+
+                </div>
+
+                <textarea
+                    id="outputText"
+                    placeholder="Your translation will appear here..."
+                    readonly
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!-- Translate Button -->
+
+        <button id="translateButton" class="translate-button">
+
+            <span class="button-text">
+                🚀 Translate Now
+            </span>
+
+            <span class="loader"></span>
+
+        </button>
+
+
+        <!-- Extra Buttons -->
+
+        <div class="action-buttons">
+
+            <button id="copyButton">
+                📋 Copy
+            </button>
+
+            <button id="speakButton">
+                🔊 Speak
+            </button>
+
+            <button id="clearButton">
+                🗑️ Clear
+            </button>
+
+        </div>
+
+
+        <!-- Status -->
+
+        <div id="status" class="status">
+            Ready to translate ✨
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="footer">
+
+            <span>⚡ Fast</span>
+            <span>🌎 Multiple Languages</span>
+            <span>✨ Easy to Use</span>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
